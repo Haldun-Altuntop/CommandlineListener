@@ -94,6 +94,18 @@ public class CommandLineListener {
         listenerThread.start();
     }
 
+    public void setStream(InputStream stream) {
+        this.stream = stream;
+    }
+
+    public String getInputPrefix() {
+        return inputPrefix;
+    }
+
+    public void setInputPrefix(String inputPrefix) {
+        this.inputPrefix = inputPrefix;
+    }
+
     private enum State {
         BLOCKED,
         RELEASED
